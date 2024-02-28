@@ -1,0 +1,19 @@
+.logo{
+    width: 20%;
+}
+.a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.b{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+
+}

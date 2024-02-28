@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        #mySidenav a 
+            {position: absolute;
+        
+        padding: 15px;
+        
+        right: 80px; transition: 0.3s; width: 100px; text-decoration: none; font-size: 20px; color: white;
+        
+        border-radius: 12px 0 0 12px; text-align: right;
+        }
+        #mySidenav a:hover{ right: 0;}
+        
+        #Profile {
+        
+        top: 180px; background-color: #4B0082; }
+        
+        #Users{
+        
+        top: 240px; background-color: #2196F3; }
+        
+        #Groups {
+        
+        background-color: #008B8B; }
+        
+        #Setting {
+        
+        top: 360px; background-color: #B8860B; }
+        
+        #LogOff {
+        
+        top: 420px;
+        
+        background-color: #FF7F50;
+        
+        } 
+        .button {
+        
+        background-color: DarkBlue; border: none; color: white; padding: 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; width: 25% }
+        h1 { text-align: center; font-size: 18px;
+        
+        }
+        
+        .button1 {border-radius: 12px;}
+        
+        button2 {border-radius: 12px;}
+        
+        button3 {border-radius: 12px;} 
+        button4 {border-radius: 12px;}
+        
+        button5 {border-radius: 12px;}
+        
+        button6 {background-color: Blue; border-radius: 12px;} 
+        button7 {background-color: Blue; border-radius: 12px;}
+        
+        button8 {background-color: Blue; border-radius: 12px;} 
+        button9 {background-color:DarkBlue; border-radius: 12px;padding: 10px; width: 10%}
+        
+        </style>
+        
+        <body>
+        
+        <h1>DEFECT REPORTING ANALYSIS AND CORRECTIVE ACTION SYSTEM</h1>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+        <button class="button button1">Product Family</button> <button class="button button2">System Hierarchy</button>
+        
+        <button class="button button3">Bill Of Materials</button>
+        
+        <button class="button button4">Library</button>
+        
+        <button class="button button5">Routing</button> 
+        <button class="button button5">E-Mail Config</button>
+        
+        <p><br><br><button class="button button6">Add Family</button> <button class="button button7">Copy Family</button>
+        
+            <button class="button button8">Imports/Exports</button></p>
+        
+        <p><br><br><button class="button button9">Back</button></p>
+        
+        <div id="mySidenav" class="sidenav">
+        
+        <a href="#" id="Profile">Profile</a>
+        
+        <a href="#" id="Users">Users</a>
+        
+        <a href="#" id="Groups">Groups</a>
+        
+        <a href="#" id="Setting">Setting</a>
+        
+        <a href="#" id="LogOff">Log Off</a>
+        
+        </div>
+        
+        </body>
+        
+</html>
