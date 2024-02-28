@@ -6,7 +6,6 @@ from .models import *
 def user(request):
     if request.method=='POST':
         mail=request.POST.get('email')
-        print(mail)
         if users.objects.filter(email=mail):
             data=users.objects.filter(email=mail)
             print(data)
